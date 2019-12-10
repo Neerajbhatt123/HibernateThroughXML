@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="beans.Student" table="STUDENT"
+		schema="neerajbhatt123">
+		<id name="id" type="int">
+			<column name="STUDENTID"></column>
+			<generator class="assigned"></generator>
+		</id>
+		<property name="name" type="string">
+			<column name="STUDENTNAME" length="20"></column>
+		</property>
+
+		<property name="address" type="string">
+			<column name="STUDENTADDRESS" length="50"></column>
+		</property>
+	</class>
+</hibernate-mapping>
